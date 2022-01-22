@@ -1,0 +1,16 @@
+.oauth2-callback {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 7rem;
+}
+
+h3 {
+    font-size: x-large;
+    font-weight: 500;
+}
+
+fast-progress-ring {
+    margin: 0;
+}

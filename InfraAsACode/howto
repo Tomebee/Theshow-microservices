@@ -1,0 +1,10 @@
+https://learn.hashicorp.com/tutorials/consul/kubernetes-minikube
+https://bd90.pl/rabbitmq-bezbolesna-integracja-z-net-core/
+
+minikube start --memory 4096 --cpus 4 --driver=hyperv
+
+minikube start --driver=hyperv
+
+minikube addons enable ingress
+
+https://tanzu.vmware.com/developer/guides/observability-prometheus-grafana-p1/

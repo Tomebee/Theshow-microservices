@@ -1,0 +1,9 @@
+.teaser-image {
+    display: block;
+    width: 100%;
+    height: 30rem;
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+    image-rendering: optimizeQuality;
+}

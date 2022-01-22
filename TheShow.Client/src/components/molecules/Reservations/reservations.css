@@ -1,0 +1,10 @@
+.reservations-row {
+    display: flex;
+    width: 80rem;
+    height: 4rem;
+    margin: 1rem auto;
+}
+
+.reservations-column {
+    width: 20rem;
+}

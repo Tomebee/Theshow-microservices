@@ -1,0 +1,22 @@
+.movie-wrapper {
+    display: grid;
+    grid-template-columns: 3fr 2fr; 
+    grid-column-gap: 5rem;
+    width: 100%;
+}
+
+.card .Input {
+    padding: 2rem !important;
+}
+
+.stripe-checkout {
+    padding: 2rem;
+    color: white !important;
+}
+
+.stripe-checkout fast-button {
+    margin-top: 1rem;
+}
+.stripe-checkout fast-button.cancel {
+    margin-left: .5rem;
+}

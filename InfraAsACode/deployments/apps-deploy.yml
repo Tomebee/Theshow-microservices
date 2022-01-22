@@ -1,0 +1,100 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: theshow-core
+spec:        
+  selector:
+    matchLabels:
+      app: theshow-core
+  replicas: 1
+  template:
+    metadata:
+      annotations:
+        consul.hashicorp.com/connect-inject: "true"
+      labels:
+        app: theshow-core
+    spec:
+      containers:
+      - name: core
+        image: theshow-core
+        #local image from docker-env
+        imagePullPolicy: Never
+        ports:
+        - containerPort: 80
+---
+
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: theshow-identity
+spec:        
+  selector:
+    matchLabels:
+      app: theshow-identity
+  replicas: 1
+  template:
+    metadata:
+      annotations:
+        consul.hashicorp.com/connect-inject: "true"
+      labels:
+        app: theshow-identity
+    spec:
+      containers:
+      - name: identity
+        image: theshow-identity
+        #local image from docker-env
+        imagePullPolicy: Never
+        ports:
+        - containerPort: 80
+
+---
+
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: theshow-notifications
+spec:        
+  selector:
+    matchLabels:
+      app: theshow-notifications
+  replicas: 1
+  template:
+    metadata:
+      annotations:
+        consul.hashicorp.com/connect-inject: "true"
+      labels:
+        app: theshow-notifications
+    spec:
+      containers:
+      - name: notifications
+        image: theshow-notifications
+        #local image from docker-env
+        imagePullPolicy: Never
+        ports:
+        - containerPort: 80
+
+---
+
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: theshow-react
+spec:        
+  selector:
+    matchLabels:
+      app: theshow-react
+  replicas: 1
+  template:
+    metadata:
+      annotations:
+        consul.hashicorp.com/connect-inject: "true"
+      labels:
+        app: theshow-react
+    spec:
+      containers:
+      - name: react
+        image: theshow-react
+        #local image from docker-env
+        imagePullPolicy: Never
+        ports:
+        - containerPort: 80

@@ -1,0 +1,10 @@
+.input {
+    background: transparent;
+    border-radius: 1px;
+    padding: .5rem;
+    outline: none;
+    border: 1px solid var(--accent-fill-rest);
+    color: var(--neutral-foreground-rest);
+    width: 15rem;
+    margin: 1rem 0;
+}

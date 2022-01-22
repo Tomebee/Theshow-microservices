@@ -1,0 +1,22 @@
+.user-template {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    padding: 2rem;
+    padding-bottom: 0;
+    background: var(--neutral-layer-4);
+}
+
+.container {
+    max-width: 70rem;
+    width: 100%;
+    background: white;
+    margin: 0 auto;
+    padding: 2rem;
+    flex-grow: 2;
+    border-radius: 2rem;
+}
+
+.container.adjust {
+    flex-grow: .5;
+}

@@ -1,0 +1,8 @@
+.title {
+    font-size: var(--type-ramp-plus-6-font-size);
+    line-height: var(--type-ramp-plus-6-line-height);
+}
+
+.title--center {
+    text-align: center;
+}

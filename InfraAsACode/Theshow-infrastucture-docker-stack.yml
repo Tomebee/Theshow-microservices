@@ -1,0 +1,19 @@
+version: '3'
+services:
+  db:
+    image: postgres:11-alpine
+    deploy:
+      replicas: 1
+    volumes:
+      - theshow_db_vol:/var/lib/postgresql/data
+    environment:
+      POSTGRES_PASSWORD: lubiejakkanapkispadajamaslemdogory123
+    ports:
+      - 5432:5432
+    networks:
+      - theshow_net
+volumes:
+  theshow_db_vol:
+networks:
+  theshow_net:
+    external: true

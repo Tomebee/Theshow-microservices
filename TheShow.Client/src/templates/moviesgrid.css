@@ -1,0 +1,9 @@
+.movies-grid-wrapper {
+    /* padding: 5rem; */
+    width: 100%;
+}
+.movies-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-column-gap: 5rem;
+}
